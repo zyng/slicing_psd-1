@@ -69,7 +69,7 @@ img {
 
 /* Page Header ------------------------------------------------*/
 .page-header {
-    background: url('../img/header2-bc.png') no-repeat;
+    background: url('../img/header2-bc.png') no-repeat center;
     background-size: cover;
     height: 1120px;
     position: relative;
@@ -322,7 +322,7 @@ img {
 
 .section-main-subscribe {
     position: relative;
-    background: url('../img/sub-bg.png');
+    background: url('../img/sub-bg.png') no-repeat center;
     background-size: cover;
     height: 600px;
 }
