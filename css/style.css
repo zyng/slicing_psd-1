@@ -53,7 +53,7 @@ img {
 
 .large-heading {
     line-height: 1.5em;
-    display: block;
+    display: iblock;
     margin: 0;
     padding: 0;
     font: 700 5em 'Raleway', sans-serif;
@@ -246,15 +246,16 @@ img {
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .section-main-about > img {
-    margin: 10% 80px 10% 12%;
+    margin: 10% 80px 10%;
 }
 
 .container-about-info {
     width:26.5%;
+    margin-bottom: 100px;
 }
 
 .container-about-info p {
@@ -274,15 +275,13 @@ img {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     z-index: -1;
 }
 
 .container-services-info {
-    margin-top: 150px;
-    margin-left: 20%;
-    margin-bottom: 150px;
+    margin: 179px 132px 151px;
 }
 
 
@@ -321,14 +320,12 @@ img {
 
 .container-services-photo .large-heading {
     z-index: 1;
-}
-
-.section-main-services span {
     position: absolute;
     top:40%;
     left:54%;
     z-index: 1;
 }
+
 /* --------------------------------------------------------- */
 
 /* GALLERY ------------------------------------------------- */
@@ -367,22 +364,37 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 .photo-part1 {
     padding: 30px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
 }
 
+/*
 .photo-part1 > img {
     display: inline-block;
 }
+*/
 
 .photo-part1-2 {
-    display: inline-block;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
 }
 
 .photo-part1-2 img {
-    display: block;
+/*    display: block;*/
     margin-left: 25px;
 }
 
@@ -391,17 +403,23 @@ img {
 }
 
 .photo-part2 {
-    width: 100%;
-    margin-bottom: 40px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 30px 50px 30px;
+
 }
 .photo-part2 img:first-child {
     margin-right: 30px;
 }
 
 .container-main-gallery img {
-    -webkit-box-shadow: 4px 4px 34px -1px rgba(130,128,130,1);
-    -moz-box-shadow: 4px 4px 34px -1px rgba(130,128,130,1);
-    box-shadow: 4px 4px 34px -1px rgba(130,128,130,1);
+    -webkit-box-shadow: 4px 4px 34px -1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 4px 4px 34px -1px rgba(0,0,0,0.5);
+    box-shadow: 4px 4px 34px -1px rgba(0,0,0,0.5);
 }
 
 .container-main-gallery-btn {
@@ -503,11 +521,6 @@ img {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 47px auto 70px;
@@ -733,7 +746,6 @@ img {
         display: none;
     }
 
-
     .open .part2 {
         display: block;position: relative;
     }
@@ -759,7 +771,7 @@ img {
     .container-about-info {
         margin:0;
         padding: 10px;
-        width: 100%;
+        width: auto;
     }
 
     .large-heading {
@@ -777,71 +789,11 @@ img {
         padding-bottom: 80px;
     }
 
-    .container-services-info {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 100px;
-        padding: 30px;
-
-        padding-top: 150px;
+    .services-content {
+        margin-top:15px;
     }
 
-    .section-main-services {
-        z-index: -2;
-    }
 
-    .container-services-photo {
-        text-align: center;
-        padding-left:10px;
-        padding-right: 10px;
-        box-sizing: border-box;
-        z-index: -1;
-        position: absolute;
-
-    }
-
-    .container-services-photo img {
-        margin:0;
-        margin-top:10px;
-    }
-
-    .container-services-photo .large-heading {
-        left:0;
-        top: -120px;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 3.63em;
-    }
-
-    .container-main-gallery-content {
-        width: 100%;
-    }
-
-    .container-main-gallery-content p {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .photo-part1 img {
-        display: inline-block;
-    }
-    .photo-part1-2 img {
-        margin: 0;
-    }
-
-    .photo-part1-2 img:first-child {
-        margin-top: 30px;
-    }
-
-    .photo-part2 {
-        width: auto;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .photo-part2 img:first-child {
-        margin-bottom: 30px;
-    }
 
     .container-main-subscribe {
         margin-top: 100px;
@@ -873,19 +825,6 @@ img {
         margin-top: 30px;
     }
 
-    .container-main-blog p {
-        width: auto;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .container-main-blog-photos .blog-image-box-2 {
-        margin: 30px 0;
-    }
-
-    .container-main-blog-btn {
-        width: auto;
-    }
 
     .section-footer p {
         width: auto;
@@ -917,3 +856,93 @@ img {
     }
 }
 
+
+@media (max-width: 1290px) {
+
+    .container-services-info {
+        padding-top: 150px;
+    }
+
+    .container-services-photo {
+        text-align: center;
+        padding-left:10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        z-index: -1;
+        position: absolute;
+    }
+
+    .services-product {
+        height: auto;
+    }
+
+
+    .container-services-photo img {
+        margin:0;
+        margin-top:120px;
+    }
+
+    .container-services-photo .large-heading {
+        padding-left: 20px;
+        padding-right: 20px;
+        position: static;
+        padding-top:0;
+    }
+}
+
+/*
+@media (max-width: 1229px) {
+
+    .container-main-gallery-content {
+
+
+    }
+
+    .container-main-gallery-content p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .photo-part1 img {
+        display: inline-block;
+    }
+    .photo-part1-2 img {
+        width:100%;
+        margin: 0;
+    }
+
+    .photo-part1-2 img:first-child {
+        margin-top: 30px;
+    }
+
+    .photo-part2 {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+*/
+
+@media (max-width: 1170px) {
+
+    .container-main-blog-photos {
+        flex-direction: column;
+    }
+    .container-main-blog p {
+        width: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .container-main-blog-photos .blog-image-box-2 {
+        margin: 30px 0;
+    }
+
+    .container-main-blog-btn {
+        width: auto;
+    }
+
+}
