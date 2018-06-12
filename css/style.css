@@ -105,7 +105,6 @@ img {
 
 
 
-
 /* Grid */
 .container-header-navigation {
 	max-width: 1500px;
@@ -787,6 +786,15 @@ img {
     padding: 5px 0 5px 15px;
 }
 
+/* -----------------------------------------------------------------*/
+
+/* Remove placeholder on focus TRCIK -------------------------------*/
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }  /*FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
 
 /* -----------------------------------------------------------------*/
 
@@ -983,5 +991,3 @@ img {
         width: 100%;
     }
 }
-
-
