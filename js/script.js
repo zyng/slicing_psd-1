@@ -57,25 +57,25 @@ $(document).ready(function() {
     var contact = $('.page-footer').offset().top;
 
      var change_background_size = function () {
-        ScrollY = $(window).scrollTop();
+        var ScrollY = $(window).scrollTop();
 
 
-        if (ScrollY >= about) {
+        if (ScrollY >= about && ScrollY < services) {
             $('.sticky').css('maxWidth',"135px");
         }
-        if (ScrollY >= services) {
+        else if (ScrollY >= services && ScrollY < gallery) {
             $('.sticky').css('maxWidth',"230px");
         }
-        if (ScrollY >= gallery) {
+        else if (ScrollY >= gallery && ScrollY < blog) {
             $('.sticky').css('maxWidth',"320px");
         }
-        if (ScrollY >= blog) {
+        else if (ScrollY >= blog && ScrollY < contact) {
             $('.sticky').css('maxWidth',"385px");
         }
-        if (ScrollY >= contact) {
+        else if (ScrollY >= contact) {
             $('.sticky').css('maxWidth',"480px");
         }
-        if (ScrollY < about) {
+        else if (ScrollY < about) {
             $('.sticky').css('maxWidth',"");
         }
 
