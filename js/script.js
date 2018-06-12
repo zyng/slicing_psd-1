@@ -59,6 +59,7 @@ $(document).ready(function() {
      var change_background_size = function () {
         ScrollY = $(window).scrollTop();
 
+
         if (ScrollY >= about) {
             $('.sticky').css('maxWidth',"135px");
         }
@@ -80,9 +81,10 @@ $(document).ready(function() {
 
         if (ScrollY >= gallery && ScrollY < blog) {
             $('.sticky').css('background-color', 'rgba(255,255,255,0.9)');
-        } else {
-            $('.sticky').css('background-color', 'rgba(255,255,255,0.5)');
+        }else {
+            $('.sticky').css('background-color', '');
         }
+
 
     };
 
