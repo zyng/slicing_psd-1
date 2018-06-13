@@ -7,13 +7,7 @@ $(document).ready(function() {
     }, false);
 
 
-    $(window).resize(function () {
-        var viewportWidth = $(window).width();
 
-        if (viewportWidth >= 840) {
-            $('.container-header-navigation').removeClass('open');
-        }
-    });
 
 
     var scrollTo = function (link, goto ,speed) {
@@ -104,6 +98,14 @@ $(document).ready(function() {
         sizeChange();
     });
 
+    $(window).resize(function () {
+        sizeChange();
+        var viewportWidth = $(window).width();
+
+        if (viewportWidth >= 840) {
+            $('.container-header-navigation').removeClass('open');
+        }
+    });
 
 
 });
