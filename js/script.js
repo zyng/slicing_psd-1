@@ -63,27 +63,27 @@ $(document).ready(function() {
         var sticky = $('.sticky');
 
         if (currentvalue != "135px" && ScrollY >= about && ScrollY < services) {
-            sticky.animate({maxWidth:"135px"},800);
+            sticky.stop().animate({maxWidth:"135px"},{duration:800,queue:false});
             currentvalue = "135px";
         }
         else if (currentvalue != "230px" && ScrollY >= services && ScrollY < gallery) {
-            sticky.animate({maxWidth:"230px"},800);
+            sticky.stop().animate({maxWidth:"230px"},{duration:800,queue:false});
             currentvalue = "230px";
         }
         else if (currentvalue != "320px" && ScrollY >= gallery && ScrollY < blog) {
-            sticky.animate({maxWidth:"320px"},800);
+            sticky.stop().animate({maxWidth:"320px"},{duration:800,queue:false});
             currentvalue = "320px";
         }
         else if (currentvalue != "385px" && ScrollY >= blog && ScrollY < contact) {
-            sticky.animate({maxWidth:"385px"},800);
+            sticky.stop().animate({maxWidth:"385px"},{duration:800,queue:false});
             currentvalue = "385px";
         }
         else if (currentvalue != "480px" && ScrollY >= contact) {
-            sticky.animate({maxWidth:"480px"},800);
+            sticky.stop().animate({maxWidth:"480px"},{duration:800,queue:false});
             currentvalue = "480px";
         }
         else if (currentvalue != '' && ScrollY < about) {
-            $('.part2').css('maxWidth', '');
+            $('.part2').stop().css('maxWidth', '');
             currentvalue = '';
         }
 
@@ -98,10 +98,13 @@ $(document).ready(function() {
     }
 
 
+
     $(window).scroll( function () {
         stickyNav();
         sizeChange();
     });
+
+
 
 });
 
